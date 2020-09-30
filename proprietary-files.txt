@@ -76,6 +76,9 @@ vendor/lib64/vendor.qti.hardware.perf@2.0.so
 etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
+# Power-libperfmgr - from sunfish RP1A.200720.010
+vendor/lib64/pixel-power-ext-V1-ndk_platform.so|b33a8897c626ff59707808ccbf3e2558d3a05b6e
+
 # QMI
 etc/sysconfig/qti_whitelist.xml
 etc/permissions/qti_libpermissions.xml
