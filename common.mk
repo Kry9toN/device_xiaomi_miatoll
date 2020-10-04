@@ -163,7 +163,7 @@ PRODUCT_COPY_FILES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_sm6250
+    android.hardware.lights-service.xiaomi_sm6250
 
 # Media
 PRODUCT_COPY_FILES += \
