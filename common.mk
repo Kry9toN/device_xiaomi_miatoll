@@ -25,6 +25,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
     android.hardware.audio@6.0 \
     android.hardware.audio.common@6.0 \
     android.hardware.audio.common@6.0-util \
