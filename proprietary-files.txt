@@ -710,10 +710,8 @@ vendor/lib/libdng_sdkvendor.so
 vendor/lib/libdpmqmihal.so
 vendor/lib/libdpps.so
 vendor/lib/libdrc.so
-vendor/lib/libdrm.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/libdrmutils.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -1314,10 +1312,8 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/libdng_sdkvendor.so
 vendor/lib64/libdpmqmihal.so
 vendor/lib64/libdpps.so
-vendor/lib64/libdrm.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libdrmutils.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libEGL_adreno.so
