@@ -224,9 +224,6 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml
 
 # IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.xiaomi
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
