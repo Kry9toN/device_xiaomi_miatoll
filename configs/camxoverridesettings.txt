@@ -1,7 +1,3 @@
-multiCameraEnable=TRUE
-enableSensorHWSync=TRUE
-multiCameraFrameSync=1
-enableSensorFpsMatch=TRUE
 #logInfoMask=0x10082
 #overrideLogLevels=0x1F
 exportSecureCamera=TRUE
