@@ -22,3 +22,51 @@ on boot && property:ro.product.vendor.device=*
 on init && property:ro.boot.hwname=joyeuse
     setprop ro.boot.product.hardware.sku joyeuse
     start vendor.nfc_hal_service
+
+# Turbo Charger
+on boot
+    write /sys/kernel/fast_charge/force_fast_charge 1
+    write /sys/kernel/fast_charge/failsafe 1
+    write /sys/class/power_supply/battery/allow_hvdcp3 1
+    write /sys/class/power_supply/battery/restricted_charging 0
+    write /sys/class/power_supply/battery/system_temp_level 0
+    write /sys/class/power_supply/battery/input_current_limited 0
+    write /sys/class/power_supply/battery/subsystem/usb/pd_allowed 1
+    write /sys/class/power_supply/usb/pd_allowed 1
+    write /sys/class/power_supply/battery/input_current_settled 1
+    write /sys/class/power_supply/usb/boost_current 1
+    write /sys/module/smb_lib/parameters/skip_thermal 0
+    write /sys/class/qcom-battery/restricted_charging 0
+    write /sys/class/power_supply/battery/allow_hvdcp3 1
+    write /sys/class/power_supply/bms/temp_cool 100
+    write /sys/class/power_supply/bms/temp_warm 600
+    write /sys/class/power_supply/usb/current_max 4000000
+    write /sys/class/power_supply/usb/hw_current_max 4100000
+    write /sys/class/power_supply/usb/pd_current_max 4100000
+    write /sys/class/power_supply/usb/ctm_current_max 4000000
+    write /sys/class/power_supply/usb/sdp_current_max 4000000
+    write /sys/class/power_supply/usb/constant_charge_current 4100000
+    write /sys/class/power_supply/usb/constant_charge_current_max 4100000
+    write /sys/class/power_supply/main/current_max 4000000
+    write /sys/class/power_supply/main/constant_charge_current 4100000
+    write /sys/class/power_supply/main/constant_charge_current_max 4100000
+    write /sys/class/power_supply/dc/current_max 4000000
+    write /sys/class/power_supply/dc/constant_charge_current_max 4100000
+    write /sys/class/power_supply/parallel/current_max 4000000
+    write /sys/class/power_supply/parallel/constant_charge_current_max 4100000
+    write /sys/class/power_supply/battery/current_max 4000000
+    write /sys/class/power_supply/battery/input_current_max 4000000
+    write /sys/class/power_supply/battery/constant_charge_current 4100000
+    write /sys/class/power_supply/battery/constant_charge_current_max 4100000
+    write /sys/class/power_supply/bms/constant_charge_current_max 4100000
+    write /sys/class/power_supply/pc_port/current_max 4000000
+    write /sys/class/power_supply/qpnp-dc/current_max 4000000
+    write /sys/class/qcom-battery/restricted_current 5000000
+    write /sys/module/qpnp_smbcharger/parameters/default_hvdcp_icl_ma 4000
+    write /sys/module/qpnp_smbcharger/parameters/default_dcp_icl_ma 4000
+    write /sys/module/qpnp_smbcharger/parameters/default_hvdcp3_icl_ma 4000
+    write /sys/module/dwc3_msm/parameters/dcp_max_current 4000
+    write /sys/module/dwc3_msm/parameters/hvdcp_max_current 4000
+    write /sys/module/phy_msm_usb/parameters/dcp_max_current 4000
+    write /sys/module/phy_msm_usb/parameters/hvdcp_max_current 4000
+    write /sys/module/phy_msm_usb/parameters/lpm_disconnect_thresh 4000
